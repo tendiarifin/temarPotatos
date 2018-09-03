@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Temar Potatos Official</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/iconLogo.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- untuk slider -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  <!-- untuk maps -->
+  <script>
+
+function initMap() {
+  // The location of Uluru
+  var cibereum = {lat: -7.1941124, lng: 107.6719418};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('google-map'), {zoom: 10, center: cibereum});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: cibereum, map: map});
+}
+</script>
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="" title="" height="37px" width="110px" style="margin-top: -7px;" /></img><br style="padding-bottom: 1px;"><b><font size="2px" color="#fff">TENAR POTATOS</font></b></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Beranda</a></li>
+          <li><a href="#about">Pemesanan</a></li>
+          <li><a href="#poped">Potato Pedia</a></li>
+          <li><a href="#tentangKami">Tentang Kami</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#services">Testimoni</a></li>
+          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="menu-has-children"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Kontak Kami</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>SELAMAT DATANG POTATOS HOLICS</h1>
+      <h2>Kami Menjual Berbagai Jenis dan Ukuran Kentang</h2>
+      <a href="#about" class="btn-get-started">Pesan Sekarang</a><br>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">PESAN DISINI</h2>
+            <h4>
+              Silahkan pilih kualitas kentang anda dan isi semua data pemesanan anda. Selamat mencoba :D
+            </h4>
+            <div class="col-md-12">
+            <div class="form-check">
+            <input type="checkbox" class="form-check-input" data-toggle="collapse" data-target="#qtyA" id="exampleCheck1" style="margin-left: -10px;"> &nbsp;&nbsp;Kualitas A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" class="form-check-input" data-toggle="collapse" data-target="#qtyB" id="exampleCheck1" style="margin-left: -10px;"> &nbsp;&nbsp;Kualitas B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" class="form-check-input" data-toggle="collapse" data-target="#qtyC" id="exampleCheck1" style="margin-left: -10px;"> &nbsp;&nbsp;Kualitas C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <label class="form-check-label" for="exampleCheck1">Kualitas_A</label> -->
+            <!-- <button class="btn" type="text" style="color: #fff; background-color: #2dc997;">dasda</button> -->
+            </div><br>
+            <div id="qtyA" class="collapse">
+              <input type="number" name="QtyA" class="form-control" placeholder="Banyak Pemesanan Kentang A (Kg)"><br>
+            </div>
+            <div id="qtyB" class="collapse">
+              <input type="number" name="QtyA" class="form-control" placeholder="Banyak Pemesanan Kentang B (Kg)"><br>
+            </div>
+            <div id="qtyC" class="collapse">
+              <input type="number" name="QtyA" class="form-control" placeholder="Banyak Pemesanan Kentang C (Kg)"><br>
+            </div>
+            <input type="text" name="namaPemesan" class="form-control" placeholder="Nama Pemesan"><br>
+            <input type="number" name="hoHp" class="form-control" placeholder="No Handphone"><br>
+            <div class="form-check">
+            <input type="checkbox" name="resto" class="form-check-input" style="margin-left: -10px;"> &nbsp;&nbsp; Resto / Pedagang &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <label class="form-check-label" for="exampleCheck1">Kualitas_A</label> -->
+            <!-- <button class="btn" type="text" style="color: #fff; background-color: #2dc997;">dasda</button> -->
+            </div><br>
+            <textarea name="alamat" class="form-control" placeholder="Alamat"></textarea><br>
+            <textarea name="keterangan" class="form-control" placeholder="keterangan"></textarea><br>
+            <button class="btn btn-lg" style="color: #fff; background-color: #2dc997;">Pesan Sekarang</button>
+            </div> 
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight">
+            <!-- SLIDER -->
+                <!-- <div class="background"> -->
+                    <!-- <h2>Carousel Example</h2>   -->
+                    <br><br>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="img/backFront.jpg" alt="Los Angeles" style="min-width:100%;">
+                        </div>
+
+                        <div class="item">
+                          <img src="img/about-img.jpg" alt="Chicago" style="width:100%;">
+                        </div>
+                      
+                        <div class="item">
+                          <img src="img/hero-bg.jpg" alt="New york" style="width:100%;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+          <!-- </div> -->
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="poped">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">POTATOS PEDIA</h3>
+          <p class="section-description">Dihalaman ini anda bisa mengetahui apapun tentang Kentang</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 background order-lg-1 order-1 wow fadeInLeft">
+            <!-- SLIDER -->
+                <!-- <div class="background"> -->
+                    <!-- <h2>Carousel Example</h2>   -->
+                    <br><br>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="img/backFront.jpg" alt="Los Angeles" style="min-width:100%;">
+                        </div>
+
+                        <div class="item">
+                          <img src="img/about-img.jpg" alt="Chicago" style="width:100%;">
+                        </div>
+                      
+                        <div class="item">
+                          <img src="img/hero-bg.jpg" alt="New york" style="width:100%;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+          <!-- </div> -->
+            
+            <div class="col-lg-6 content order-lg-1 order-1">
+            <b>Kentang</b> (Solanum tuberosum L.) adalah tanaman dari suku Solanaceae yang memiliki umbi batang yang dapat dimakan dan disebut "kentang" pula. Kentang berasal dari Amerika Selatan. Kentang sudah menjadi salah satu makanan pokok di Eropa tapi di Indonesia kentang merupakan salahsatu sayuran mewah.<br><br>
+            Kandungan gizi yang terdapat pada kentang antara lain vitamin A, B-kompleks, C, asam folat, mineral, protein, karbohidrat, karotenoid, dan polifenol. kentang juga mengandung zat solanin yang dikenal sebagai obat penenang, antikejang, antijamur, dan pestisidal.Vitamin C yang terkandung dalam kentang setiap 100 g adalah 17 mg. Selain terkandung karbohidrat dan serat-serat, mineral yang ada padanya antara lain adalah zat besi, fosfor, dan kalium. Kompresan air kentang ini dikenal sangat membantu pengobatan luka pada kulit.<br><br>
+            Kentang merupakan salahsatu makanan favorit banyak orang dengan banyaknya jenis olahan kentang dan kandungan karbohidrat yang banyak kentang bisa digunakan sebagai pengganti nasi dan bagus untuk anda yang sedang melakukan diet, olahan makanan di Indonesia yang berasal dari kentang antara lain deplo, orek kentang, kentang goreng, perkedel, mustofa dan banyak lagi.
+            
+
+            </div> 
+            </div>
+        </div>
+      </div>
+    </section>
+     <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="tentangKami">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">TENTANG KAMI</h3>
+          <p class="section-description">Halaman yang Menerangkan Kami Lebih Jelas</p>
+        </div>
+        <b>Kami</b> merupakan salah satu suplier sayuran ke pasar induk Tangerang, Bogor dan Cibitung. Dengan pengalaman kami dibidang sayuran kami bisa memberikan kualitas dan layanan terbaik bagi konsumen kami. Selain dari sayuran kentang kami juga merupakan suplier dari sayuran wortel, dan kubis.<br><br>
+        Selain dari suplier kami juga mempunyai kebun dari sayuran tersebut sehingga kami berani menjamin untuk kualitas dan harga dari kentang kami.
+        Produk yang kami jual untuk saat ini merupakan kentang bahan olahan, untuk hasil olahan kentang dan bahan sayuran lainnya akan menyusul.
+        Kentang yang kami jual untuk saat ini adalah kentang berkualitas A, B dan C.<br><br>
+        Untuk menjaga kepercayaan kualitas konsumen, kami menjual kentang dengan kualitas terbaik sehingga konsumen tidak perlu khawatir akan kalitas yang kami punya.
+        <br><br>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <img src="img/about-img.jpg" style="height: 100%; width: 100%;">
+              <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <img src="img/about-img.jpg" style="height: 100%; width: 100%;">
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <img src="img/about-img.jpg" style="height: 100%; width: 100%;">
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #tentang kami -->
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Facts</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">232</span>
+            <p>Clients</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">521</span>
+            <p>Projects</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,463</span>
+            <p>Hours Of Support</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">15</span>
+            <p>Hard Workers</p>
+  				</div>
+
+  			</div>
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Services</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-photo"></i></a></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-road"></i></a></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-shopping-bag"></i></a></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+    Call To Action Section
+    ============================-->
+    <section id="call-to-action">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Call To Action</h3>
+            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Portfolio</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-logo">Logo</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="portfolio-wrapper">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="img/portfolio/app1.jpg" alt="">
+              <div class="details">
+                <h4>App 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="img/portfolio/web2.jpg" alt="">
+              <div class="details">
+                <h4>Web 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="img/portfolio/app3.jpg" alt="">
+              <div class="details">
+                <h4>App 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="img/portfolio/card1.jpg" alt="">
+              <div class="details">
+                <h4>Card 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="img/portfolio/card2.jpg" alt="">
+              <div class="details">
+                <h4>Card 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="img/portfolio/web3.jpg" alt="">
+              <div class="details">
+                <h4>Web 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="img/portfolio/card3.jpg" alt="">
+              <div class="details">
+                <h4>Card 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="img/portfolio/app2.jpg" alt="">
+              <div class="details">
+                <h4>App 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="img/portfolio/logo1.jpg" alt="">
+              <div class="details">
+                <h4>Logo 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="img/portfolio/logo3.jpg" alt="">
+              <div class="details">
+                <h4>Logo 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="img/portfolio/web1.jpg" alt="">
+              <div class="details">
+                <h4>Web 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="img/portfolio/logo2.jpg" alt="">
+              <div class="details">
+                <h4>Logo 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Team</h3>
+          <p class="section-description">Team yang Terlibat dalam Temar Potatos</p>
+        </div>
+        <div class="row justify-content-center">
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/tendi.jpg" alt=""></div>
+              <h4>Tendi Arifin</h4>
+              <span>Owner and founder Temar Potatos</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/mario.jpg" alt=""></div>
+              <h4>Mario Mukti</h4>
+              <span>Owner and founder Temar Potatos</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">KONTAK</h3>
+          <p class="section-description">Hubungi Kami Melalui Kontak Resmi Kami </p>
+        </div>
+      </div>
+      <!-- var cibereum = {lat: -7.1941124, lng: 107.6719418}; -->
+
+      <div id="google-map"div>
+      <!-- <div id="google-map" data-latitude="-7.1941124" data-longitude="107.67194184"></div> -->
+
+      <div class="container wow fadeInUp">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Kp. Leubaksari Rt.01/16 Ds. Cibereum Kertasari<br>Kab. Bandung Jawa Barat</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>tmpofficial@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+62 852 1777 6787</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Tmp Management</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <!-- <div id="map"></div> -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATDcvmOCgMUiuE68bC4mJwEV53rfPsWXk&callback=initMap"></script>
+
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
